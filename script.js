@@ -66,7 +66,7 @@ function cerrarImagen(id) {
   var imageContainer = document.querySelector(`.image-container:nth-child(${id})`);
   imageContainer.style.display = "none";
 }
-/* funcion de mensaje/alerta*/
+//funcion de mensaje/alerta
 document.addEventListener("DOMContentLoaded", function () {
   const botonMostrarMensaje = document.getElementById("mostrarMensaje");
 
@@ -74,3 +74,28 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Mensaje enviado exitosamente");
   });
 });
+
+//funcion para guardar datos de inicio de sesion
+function guardarDatos() {
+  var nombre = document.getElementById("nombreInput").value;
+  var documento = document.getElementById("documentoInput").value;
+
+  // Guardar los datos en localStorage
+  localStorage.setItem("nombre", nombre);
+  localStorage.setItem("documento", documento);
+
+  // Mostrar los datos guardados en pantalla
+  mostrarDatos();
+}
+
+function mostrarDatos() {
+  var nombreGuardado = localStorage.getItem("nombre");
+  var documentoGuardado = localStorage.getItem("documento");
+  var nombreMostrado = document.getElementById("nombreMostrado");
+  var documentoMostrado = document.getElementById("documentoMostrado");
+
+  nombreMostrado.textContent = "Nombre: " + nombreGuardado;
+  documentoMostrado.textContent = "Número de Documento: " + documentoGuardado;
+}
+
+mostrarDatos(); // Mostrar los datos guardados al cargar la página
