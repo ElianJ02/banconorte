@@ -1,0 +1,108 @@
+/* Estilos para el modo claro */
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  /* Icono para cambio*/
+  .tema {
+    width: 50px;
+    height: 50px;
+    margin-left: 0%;
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 92%;
+    position: fixed;
+  }
+/*inicio de cuerpo de simulador*/
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 20px;
+    text-align: center;
+}
+.formulario {
+  text-align: left;
+  margin-bottom: 20px;
+}
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color:#5d9c68;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #354d38;
+}
+
+.resultado {
+    text-align: center;
+}
+
+#cuota {
+    font-weight: bold;
+    color:#5d9c68;
+}
+/*fin de cuerpo de simulador*/
+ h1 {
+  text-align: center;
+  font-size: 60px;
+ }
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #5d9c68;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none; /* Quitar subrayado de enlace */
+  border-radius: 5px;
+  transition: background-color 0.7s; /* Efecto de cambio de color al pasar el mouse */
+}
+.box:hover {
+  background-color: #1b364e;
+}
+
+.image-container {
+  align-items: center;
+  margin-left: 23%;
+}
+.close-button {
+  position: absolute;
+  margin-top: 0;
+  background-color: #00000067;
+}
+.instrucciones {
+  align-self: center;
+  margin-left: 22%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}

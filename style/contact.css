@@ -1,0 +1,57 @@
+/* Estilos para el modo claro */
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  /* Icono para cambio*/
+  .tema {
+    width: 50px;
+    height: 50px;
+    margin-left: 0%;
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin-left: 92%;
+    position: fixed;
+  }
+
+/*fin de cuerpo de simulador*/
+ h1 {
+  text-align: center;
+  font-size: 60px;
+ }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button2 {
+    background-color: #5d9c68;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #354d38;
+}
+.formulario2 {
+  margin-left: 30%;
+  padding: 20px;
+  max-width: 800px;
+}

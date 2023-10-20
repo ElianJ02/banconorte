@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco del Norte</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+    <img class="tema" src="" id="modo-imagen" onclick="toggleTheme()">
+    <img class="logo" src="./resources/logo.png" id="" >
+    <h1>Banco del Norte</h1>
+</header>
+<main>
+    <div class="container">
+    <h2>Simulador de Préstamos</h2>
+    <div class="formulario">
+        <label for="monto">Monto del Préstamo:</label>
+        <input type="number" id="monto" placeholder="Ingrese el monto">
+        <br>
+        <label for="meses">Plazo en Meses:</label>
+        <input type="number" id="meses" placeholder="Ingrese los meses">
+        <br>
+        <label for="interes">Tasa de Interés:</label>
+        <select id="interes">
+            <option value="baja">Baja (5%)</option>
+            <option value="media">Media (10%)</option>
+            <option value="alta">Alta (15%)</option>
+        </select>
+        <br>
+        <button id="calcular">Calcular Cuota Mensual</button>
+    </div>
+    <div class="resultado">
+        <h2>Resultado:</h2>
+        <p>Cuota Mensual: <span id="cuota"></span></p>
+    </div>
+</div>
+</main>
+  <script src="./script.js"></script>
+</body>
+</html>
